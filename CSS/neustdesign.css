@@ -171,11 +171,11 @@ body {
 
 .TEXT h1 {
   color: var(--secondlight);
-  font-size: clamp(5.4375rem, 3.8906rem + 7.7344vw, 11.625rem);
+  font-size: clamp(0.625rem, -2.3438rem + 9.5vw, 3rem);
 }
 .TEXT h2 {
   color: var(--mainbgcolor);
-  font-size: clamp(1.5625rem, 1.4219rem + 0.7031vw, 2.125rem);
+  font-size: clamp(0.625rem, -2.3438rem + 9.5vw, 3rem);
   width: 85%;
 }
 .topcontents {
@@ -186,10 +186,7 @@ body {
   padding: 10em;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/Gallery/Sumacab\ Campus.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  background-blend-mode: darken;
+
 }
 .topcontents img {
   display: block;
@@ -334,7 +331,7 @@ body {
   padding-bottom: 1em;
 }
 .boxcards img {
-  max-width: 150px;
+  max-width: 150px !important;
   width: 100%;
   border-radius: 50% !important;
   height: auto;
@@ -828,6 +825,33 @@ h3 {
   }
 }
 @media only screen and (max-width: 820px) {
+  .holders  {
+    width: 100%;
+    justify-content: center;
+  }
+  .rowsd a {
+    color: #222;
+  }
+  .holders h1{
+    text-align: center;
+    width: 100%;
+    color: #222;
+  }
+  .TEXT h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .TEXT h2 {
+    
+  }
+  .topcontents {
+  height: max-content;
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+  .topcontents img {
+    width: 20%;
+  }
   .achieveker {
     flex-direction: column;
   }
@@ -844,7 +868,7 @@ h3 {
   }
   .neustvalues p {
     width: 80% !important;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   .corewrapper {
     align-items: center;
@@ -853,7 +877,7 @@ h3 {
   }
   .corewrapper p {
     text-align: start;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 80% !important;
   }
   .corevalues {
